@@ -39,15 +39,11 @@ class BucketFill{
 		while(n > 0){
 		for(int i = 0; i < arr.length; i++){
 			for(int j = 0; j < arr[0].length; j++){
-				if(imageSize[i][j]==1){
-					try{
+				if(imageSize[i][j]==1){ 
 					up(arr,i,j,imageSize);
 					down(arr,i,j,imageSize);
 					left(arr,i,j,imageSize);
-					right(arr,i,j,imageSize); 
-					}catch(Exception e){
-
-					}
+					right(arr,i,j,imageSize);  
 				}
 			}
 		}
